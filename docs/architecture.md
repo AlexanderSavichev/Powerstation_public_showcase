@@ -159,3 +159,24 @@ hand-built detail (ribbed porcelain support insulators, transformer expansion ta
 rails / bushings, control-building roof slab). glTF meshes (deck.gl
 ScenegraphLayer) and three.js remain options for photorealism; the extrusion path was
 chosen deliberately for control and performance.
+
+## Scope and limitations
+
+This is a concept-stage engineering prototype rather than a certified
+design or protection-setting tool.
+
+- The current topology is limited to two-transformer, two-section
+  35/110 kV substations (for now).
+- The layout engine implements a defined subset of applicable
+  placement and clearance rules.
+- Protection settings are preliminary and require full engineering
+  verification before practical use.
+- The generated SCL model uses generic devices and is not a replacement
+  for vendor-specific IED engineering.
+
+## Verification
+
+- Short-circuit results are checked against reference network cases.
+- Switching scenarios (as well as major part of the code) are covered by automated tests.
+- Generated SSD/SCD files are validated against the SCL XSD.
+- Calculation values remain deterministic and reproducible without the LLM.
