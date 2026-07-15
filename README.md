@@ -1,4 +1,4 @@
-# Substation Design Concept Generator
+# Substation Concept Generator
 
 A prototype tool for automated concept generation of 35/110 kV substations. 
 It produces standards-aware equipment layout variants on a user-defined site, 
