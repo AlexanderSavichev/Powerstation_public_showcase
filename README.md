@@ -153,19 +153,19 @@ short-circuit / protection value, citing the relevant clause of the standard.
 │  Corporate energy-dashboard UI · custom RU/EN i18n              │
 └───────────────┬─────────────────────────────────────────────────┘
                 │  REST (/api/v1)
-┌───────────────┴─────────────────────────────────────────────────┐
-│  Backend — Kotlin / Java · Spring Boot                          │
-│                                                                  │
-│   Geometric layout engine ──► generation result (WGS84 geometry) │
+┌───────────────┴───────────────────────────────────────────────────┐
+│  Backend — Kotlin / Java · Spring Boot                            │
+│                                                                   │
+│   Geometric layout engine ──► generation result (WGS84 geometry)  │
 │                    │                                              │
 │                    ├─► Electrical layer  (Z-bus, GOST + IEC 60909)│
 │                    ├─► Protection settings (ANSI 50/51/87T/49)    │
 │                    ├─► Cable-channel router (comb + orthogonal A*)│
 │                    ├─► SCL export (IEC 61850-6 SSD/SCD, JAXB)     │
 │                    └─► Norms copilot (LLM, full-context, no math) │
-│                                                                  │
-│   MariaDB · Flyway migrations · JTS geometry                  │
-└──────────────────────────────────────────────────────────────────┘
+│                                                                   │
+│   MariaDB · Flyway migrations · JTS geometry                      │
+└───────────────────────────────────────────────────────────────────┘
 ```
 
 A more detailed write-up of the engineering decisions is in
