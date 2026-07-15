@@ -1,9 +1,9 @@
-# Substation Design Generator
+# Substation Design Concept Generator
 
-An automated design tool for HV distribution substations. It generates a
-code-compliant physical layout on a real-world map in 3D, runs a multi-regime
-short-circuit and protection-setting analysis, and exports the whole design as
-**IEC 61850 SCL** (SSD/SCD).
+A prototype tool for automated concept generation of 35/110 kV substations. 
+It produces standards-aware equipment layout variants on a user-defined site, 
+performs multi-regime short-circuit analysis according to GOST R 52735 and IEC 60909,
+estimates preliminary protection settings, and exports DXF and IEC 61850 SSD/SCD files.
 
 > **Note on the source code.** The generator is a private project. This repository
 > is a portfolio showcase — screenshots, recordings and an architecture write-up.
@@ -94,9 +94,7 @@ protections and checks selectivity:
 
 - **ANSI 51 (IDMT overcurrent), 50 (instantaneous), 87T (differential),
   49 (thermal)**, plus the LV incomer.
-- Settings are de-rated by the maximum-current regime and their sensitivity
-  is checked against the minimum-current regime — the two extremes are computed
-  separately.
+- Pickup settings are selected using the maximum-current scenario, while sensitivity for relay protection is checked against the minimum-current scenario.
 - Automatic **CT ratio selection** (nearest IEC standard ratio ≥ 1.05 × I_nom),
   with a primary/secondary values toggle for the relay engineer.
 - Each setting carries its formula with the numbers substituted in. This tool is explicit that these
