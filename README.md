@@ -6,8 +6,7 @@ short-circuit and protection-setting analysis, and exports the whole design as
 **IEC 61850 SCL** (SSD/SCD).
 
 > **Note on the source code.** The generator is a private project. This repository
-> is a **portfolio showcase** — screenshots, recordings and an architecture write-up.
-> The full source code can be shared with hiring teams on request.
+> is a portfolio showcase — screenshots, recordings and an architecture write-up.
 
 ![Live generation of a substation on the map](assets/gifs/generation-trace.gif)
 
@@ -16,8 +15,8 @@ short-circuit and protection-setting analysis, and exports the whole design as
 ## What it does
 
 Give it a plot of land (drawn on a real map) and a set of parameters — voltage
-classes, installed power, incoming-line configuration and number of variants — and it produces a complete
-preliminary substation design with specified number of equipment placements:
+classes, installed power, incoming-line configuration and number of variants — 
+and it produces a preliminary substation concept with automatically placed equipment:
 
 1. **A physical layout** — transformers, HV breaker bays, section switchgear,
    metal-clad switchgear (KRUN/КРУН), the control building (OPU/ОПУ), busbars,
@@ -188,10 +187,8 @@ A more detailed write-up of the engineering decisions is in
 
 ---
 
-## Status & contact
+## Status
 
 This is an ongoing personal project, built to explore substation design automation
 and grid-software engineering (protection, short-circuit, IEC 61850).
-
-**The full source code is available on request.**
 
